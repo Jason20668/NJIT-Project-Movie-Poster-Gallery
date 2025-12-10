@@ -30,20 +30,20 @@
 
 		</div>
 
-		<div class="main">
+		<div class="main rounded">
 			<div class="row">
-				<div class="col-md-6" v-for="movie in movies">
+				<div class="col-md-3" v-for="(movie, index) in movies" :key="index">
 					<div class="thumbnail">
-						<img class="poster img-fluid" :src="movie.posters[movie.posterindex]" />
-						<div class="imageInfo">{{ movie.posters }}</div>
+						<img class="poster img-fluid" :src="movie.posters[movie.posterindex]" @click="posterClick(index)"/>
+						<div class="imageInfo">{{ movie.posters}}</div>
 						<p class="title">{{ movie.title }} ({{ movie.country }})</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
-						<p class="runtime">Runtime: {{ movie.runtime }}</p>
-						<p class="released">Released: {{ movie.released }} | Rated: {{ movie.rating }}</p>
-						<p class="websites">Websites: <a :href="movies.imdb"> IMDB </a> | <a :href="movies.website">Website</a></p>
-						<div class="social">
-							<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
-							<p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{ movie.dislikes }}</p>
+						<p class="runtime">Runtime: {{ timeText(movie.runtime) }}</p>
+						<p class="released">Released: {{ makeTextDate(movie.released) }} | Rated: {{ movie.rating }}</p>
+						<p class="websites">Websites: <a :href="movie.imdb"> IMDB </a> | <a :href="movie.website">Website</a></p>
+						<div class="social pt-2 justify-content-center text-center">
+							<p class="likes" @click="like(index)"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
+							<p class="dislikes" @click="dislike(index)"><i class="bi bi-hand-thumbs-down"></i> {{ movie.dislikes }}</p>
 						</div>
 					</div>
 				</div>

@@ -40,24 +40,40 @@ const vue_app = Vue.createApp({
             }
       },
       methods: {
-            makeTextDate(dateArray){
+            makeTextDate(dateArray) {
+                  let year = dateArray[0];
+                  let month = dateArray[1];
+                  let day = dateArray[2]
 
+                  return `${month} / ${day} / ${year}`
             },
 
-            like(index){
-
+            like(index) {
+                  this.movies[index].likes++;
             },
 
-            dislike(index){
-
+            dislike(index) {
+                  this.movies[index].dislikes++;
             },
 
-            posterClick(index){
+            posterClick(index) {
+                  let movie = this.movies[index];
 
+                  movie.posterindex++;
+
+                  if (movie.posterindex >= movie.posters.length) {
+                        movie.posterindex = 0;
+                  }
             },
 
-            timeText(minutes){
-                  
+            timeText(minutes) {
+                  let hrs = Math.trunc(minutes / 60);
+                  let min = minutes % (hrs * 60);
+                  if (hrs >= 2) {
+                        return `${hrs} hours ${min} minutes`
+                  } else {
+                        return `${hrs} hour ${min} minutes`
+                  }
             }
       }
 })
