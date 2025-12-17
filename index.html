@@ -32,7 +32,7 @@
 
 		<div class="main rounded">
 			<div class="row">
-				<div class="col-md-3" v-for="(movie, index) in movies" :key="index">
+				<div class="col-md-4" v-for="(movie, index) in movies" :key="index">
 					<div class="thumbnail">
 						<img class="poster img-fluid" :src="movie.posters[movie.posterindex]" @click="posterClick(index)"/>
 						<div class="imageInfo">{{ (movie.posterindex + 1)}}/3</div>

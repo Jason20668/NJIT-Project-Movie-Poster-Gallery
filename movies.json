@@ -111,6 +111,20 @@
             "dislikes": 101,
             "posterindex": 0
       },
+            {
+            "title": "Inglourious Basterds",
+            "iscore": 8.4,
+            "rating": "R",
+            "runtime": 153,
+            "released": [2009, 8, 21],
+            "country": "USA",
+            "posters": ["img/IB-1.jpg", "img/IB-2.jpg", "img/IB-3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0361748/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_inglo",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 812,
+            "dislikes": 101,
+            "posterindex": 0
+      },
       {
             "title": "Spirited Away",
             "iscore": 8.6,
@@ -126,17 +140,32 @@
             "posterindex": 0
       },
       {
-            "title": "Inglourious Basterds",
-            "iscore": 8.4,
-            "rating": "R",
-            "runtime": 153,
-            "released": [2009, 8, 21],
-            "country": "USA",
-            "posters": ["img/IB-1.jpg", "img/IB-2.jpg", "img/IB-3.jpg"],
-            "imdb": "https://www.imdb.com/title/tt0361748/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_inglo",
+            "title": "Howl's Moving Castle",
+            "iscore": 8.2,
+            "rating": "PG",
+            "runtime": 119,
+            "released": [2004, 6, 17],
+            "country": "Japan",
+            "posters": ["img/HMC-1.jpg", "img/HMC-2.jpg", "img/HMC-3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0347149/?ref_=nv_sr_srsg_0_tt_1_nm_0_in_0_q_howls%2520moving%2520ca",
             "website": "https://www.uphe.com/schindlers-list",
-            "likes": 812,
-            "dislikes": 101,
+            "likes": 1836,
+            "dislikes": 72,
+            "posterindex": 0
+      },
+      {
+            "title": "Porco Rosso",
+            "iscore": 7.7,
+            "rating": "PG",
+            "runtime": 94,
+            "released": [1992,12, 16],
+            "country": "Japan",
+            "posters": ["img/PR-1.jpg", "img/PR-2.jpg", "img/PR-3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0104652/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_porco",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 1836,
+            "dislikes": 72,
             "posterindex": 0
       }
+
 ]
